@@ -347,7 +347,7 @@ export default function Home() {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <h4>Email Us</h4>
-                  <p><a href="mailto:info@frostflowhvac.ca">info@frostflowhvac.ca</a></p>
+                  <p><a href="mailto:info@frostflow.ca">info@frostflow.ca</a></p>
                   <small>We respond within 2 hours</small>
                 </div>
               </div>
