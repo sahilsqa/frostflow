@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer'
 import { QuickContactData, DetailedContactData } from './validation'
 
 // Create transporter (you'll need to configure with actual email service)
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   // Gmail configuration (example)
   service: 'gmail',
   auth: {
@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransporter({
 })
 
 // Alternative configuration for other services
-// const transporter = nodemailer.createTransporter({
+// const transporter = nodemailer.createTransport({
 //   host: process.env.SMTP_HOST,
 //   port: parseInt(process.env.SMTP_PORT || '587'),
 //   secure: false,
@@ -65,8 +65,8 @@ export async function sendQuickContactEmail(data: QuickContactData) {
   `
 
   const mailOptions = {
-    from: process.env.EMAIL_FROM || 'noreply@frostflowhvac.ca',
-    to: process.env.EMAIL_TO || 'info@frostflowhvac.ca',
+    from: process.env.EMAIL_FROM || 'noreply@frostflow.ca',
+    to: process.env.EMAIL_TO || 'info@frostflow.ca',
     subject: `${data.urgency === 'emergency' ? '🚨 EMERGENCY' : '📧'} New Contact Form - ${data.name}`,
     text: textContent,
     html: htmlContent,
@@ -195,8 +195,8 @@ export async function sendDetailedContactEmail(data: DetailedContactData) {
   `
 
   const mailOptions = {
-    from: process.env.EMAIL_FROM || 'noreply@frostflowhvac.ca',
-    to: process.env.EMAIL_TO || 'info@frostflowhvac.ca',
+    from: process.env.EMAIL_FROM || 'noreply@frostflow.ca',
+    to: process.env.EMAIL_TO || 'info@frostflow.ca',
     subject: `📋 Detailed Quote Request - ${data.firstName} ${data.lastName}`,
     text: textContent,
     html: htmlContent,
