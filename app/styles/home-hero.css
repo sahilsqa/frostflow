@@ -41,32 +41,32 @@
 }
 
 .hvac-unit {
-  top: 15%;
-  right: 10%;
+  top: 8%;
+  right: 5%;
   animation: float 6s ease-in-out infinite;
 }
 
 .thermometer {
-  top: 60%;
-  right: 15%;
+  top: 80%;
+  right: 8%;
   animation: float 4s ease-in-out infinite 1s;
 }
 
 .snowflake {
-  top: 25%;
-  left: 5%;
+  top: 12%;
+  left: 2%;
   animation: float 5s ease-in-out infinite 2s;
 }
 
 .fire {
-  top: 70%;
-  left: 8%;
+  top: 85%;
+  left: 3%;
   animation: float 7s ease-in-out infinite 0.5s;
 }
 
 .tools {
-  top: 40%;
-  left: 85%;
+  top: 35%;
+  right: 2%;
   animation: float 5.5s ease-in-out infinite 1.5s;
 }
 

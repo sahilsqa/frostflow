@@ -79,29 +79,29 @@
 }
 
 .heating-icon {
-  top: 20%;
-  left: 10%;
+  top: 8%;
+  left: 3%;
   color: #ef4444;
   animation-delay: 0s;
 }
 
 .cooling-icon {
-  top: 70%;
-  left: 15%;
+  top: 85%;
+  left: 5%;
   color: #06b6d4;
   animation-delay: 2s;
 }
 
 .ventilation-icon {
-  top: 30%;
-  right: 20%;
+  top: 15%;
+  right: 5%;
   color: #10b981;
   animation-delay: 4s;
 }
 
 .maintenance-icon {
-  top: 60%;
-  right: 10%;
+  top: 75%;
+  right: 3%;
   color: #f59e0b;
   animation-delay: 6s;
 }
